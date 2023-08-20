@@ -1,6 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:plateron/core/injection/injection.dart';
-import 'package:plateron/core/navigation/app_router.dart';
 import 'package:plateron/features/checkout/presentation/bloc/cart_bloc.dart';
 import 'package:plateron/features/checkout/presentation/pages/cart_items_page.dart';
 import 'package:plateron/features/dashboard/data/model/menu.dart';
@@ -32,8 +31,6 @@ class _MenusPageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final router = locator<AppRouter>();
-
     return BlocBuilder<CartBloc, CartState>(builder: (context, cartState) {
       return BlocBuilder<MenuListBloc, MenuListState>(
         builder: (context, state) {

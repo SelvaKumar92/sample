@@ -1,5 +1,4 @@
 import 'package:plateron/presentation/presentation.dart';
-import 'package:plateron/presentation/widgets/button/cart_button.dart';
 
 /// Renders a menu List Item
 class MenuListItem extends StatelessWidget {
@@ -25,16 +24,16 @@ class MenuListItem extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        if(image?.isNotEmpty??false)
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 5),
-          child: Image.network(
-            fit: BoxFit.fitHeight,
-            image ?? '',
-            height: 125,
-            width: 125,
+        if (image?.isNotEmpty ?? false)
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5),
+            child: Image.network(
+              fit: BoxFit.fitHeight,
+              image ?? '',
+              height: 125,
+              width: 125,
+            ),
           ),
-        ),
         const SizedBox(width: 12),
         Expanded(
           child: Padding(
@@ -44,28 +43,29 @@ class MenuListItem extends StatelessWidget {
               children: [
                 Text(
                   title ?? '',
-                  style: TextStyle(fontSize: 16),
+                  style: const TextStyle(fontSize: 16),
                 ),
                 const SizedBox(
                   height: 10,
                 ),
                 Text(
                   description ?? '',
-                  style: TextStyle(fontSize: 10, color: Colors.grey),
+                  style: const TextStyle(fontSize: 10, color: Colors.grey),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
                 Row(
-                 children: [
+                  children: [
                     const Icon(
                       Icons.currency_rupee_outlined,
                       size: 15,
                     ),
                     Text(
                       "'${price.toString()}",
-                    ),Spacer(),
-                    addToCart??SizedBox()
+                    ),
+                    const Spacer(),
+                    addToCart ?? const SizedBox()
                   ],
                 ),
               ],

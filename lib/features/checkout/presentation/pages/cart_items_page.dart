@@ -5,11 +5,11 @@ import 'package:plateron/presentation/presentation.dart';
 import 'package:plateron/presentation/widgets/button/cart_button.dart';
 import 'package:plateron/presentation/widgets/list_item/menu_list_item.dart';
 
-/// Displays "menus" page
+/// Displays "cart" page
 class CartItemsPage extends StatelessWidget {
   final CartBloc cartBloc;
 
-  const CartItemsPage({required this.cartBloc});
+  const CartItemsPage({super.key, required this.cartBloc});
 
   @override
   Widget build(BuildContext context) {
