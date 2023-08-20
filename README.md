@@ -1,4 +1,4 @@
-# Wealthy Mobile App
+# Restaurant Mobile App
 
 This is the project for the new Wealthy mobile application.
 
