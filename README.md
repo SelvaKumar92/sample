@@ -1,7 +1,5 @@
 ## Getting Started
 
-Open the project directory 'packages/wealthy' in Android Studio.
-
 Retrieve the packages for the project using 'Tools -> Flutter -> Flutter Pub Get' or the following command.
 ```
 flutter pub get
