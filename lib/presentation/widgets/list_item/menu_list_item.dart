@@ -32,6 +32,12 @@ class MenuListItem extends StatelessWidget {
               image ?? '',
               height: 125,
               width: 125,
+              errorBuilder: (context, exception, stackTrace) {
+                return const Icon(
+                  Icons.image_outlined,
+                  size: 125,
+                );
+              },
             ),
           ),
         const SizedBox(width: 12),

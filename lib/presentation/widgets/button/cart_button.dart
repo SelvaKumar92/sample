@@ -38,6 +38,7 @@ class CartButton extends StatelessWidget {
                 InkWell(
                   onTap: onAddPressed,
                   child: const Icon(
+                    key: Key('add'),
                     Icons.add,
                     size: 15,
                   ),
@@ -48,6 +49,7 @@ class CartButton extends StatelessWidget {
                 InkWell(
                   onTap: onMinusPressed,
                   child: const Icon(
+                    key: Key('remove'),
                     Icons.remove,
                     size: 15,
                   ),
